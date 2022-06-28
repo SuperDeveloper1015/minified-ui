@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.a27ad4fb.chunk.css",
-    "main.js": "./static/js/main.d540a1a3.chunk.js",
-    "main.js.map": "./static/js/main.d540a1a3.chunk.js.map",
+    "main.css": "./static/css/main.0f7dae22.chunk.css",
+    "main.js": "./static/js/main.fa621efe.chunk.js",
+    "main.js.map": "./static/js/main.fa621efe.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.216c5a96.js",
     "runtime-main.js.map": "./static/js/runtime-main.216c5a96.js.map",
     "static/css/2.6750a0ab.chunk.css": "./static/css/2.6750a0ab.chunk.css",
@@ -13,19 +13,19 @@
     "static/js/4.3fa613e0.chunk.js": "./static/js/4.3fa613e0.chunk.js",
     "static/js/4.3fa613e0.chunk.js.map": "./static/js/4.3fa613e0.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.9d181391c372910d4e2ff4a0a34191f3.js": "./precache-manifest.9d181391c372910d4e2ff4a0a34191f3.js",
+    "precache-manifest.35bbc824cc482dabd5f863877f015be9.js": "./precache-manifest.35bbc824cc482dabd5f863877f015be9.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.6750a0ab.chunk.css.map": "./static/css/2.6750a0ab.chunk.css.map",
-    "static/css/main.a27ad4fb.chunk.css.map": "./static/css/main.a27ad4fb.chunk.css.map",
+    "static/css/main.0f7dae22.chunk.css.map": "./static/css/main.0f7dae22.chunk.css.map",
     "static/js/2.e8c4ce5f.chunk.js.LICENSE.txt": "./static/js/2.e8c4ce5f.chunk.js.LICENSE.txt",
     "static/js/3.729c68b3.chunk.js.LICENSE.txt": "./static/js/3.729c68b3.chunk.js.LICENSE.txt",
-    "static/js/main.d540a1a3.chunk.js.LICENSE.txt": "./static/js/main.d540a1a3.chunk.js.LICENSE.txt"
+    "static/js/main.fa621efe.chunk.js.LICENSE.txt": "./static/js/main.fa621efe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.216c5a96.js",
     "static/css/2.6750a0ab.chunk.css",
     "static/js/2.e8c4ce5f.chunk.js",
-    "static/css/main.a27ad4fb.chunk.css",
-    "static/js/main.d540a1a3.chunk.js"
+    "static/css/main.0f7dae22.chunk.css",
+    "static/js/main.fa621efe.chunk.js"
   ]
 }
