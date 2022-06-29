@@ -275,6 +275,21 @@
 	},
 	{
 		"constant": true,
+		"inputs": [],
+		"name": "collectedFee",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
 		"inputs": [
 			{
 				"internalType": "bytes32",
@@ -349,9 +364,65 @@
 			}
 		],
 		"name": "deposit",
-		"outputs": [],
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "commitment",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint32",
+				"name": "insertedIndex",
+				"type": "uint32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "blocktime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "cycDeno",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "fee",
+				"type": "uint256"
+			}
+		],
 		"payable": true,
 		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "feeToCollectAmount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "feeToCollectPercent",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -373,6 +444,15 @@
 		],
 		"payable": false,
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "forceSwapAndShare",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -469,48 +549,6 @@
 	},
 	{
 		"constant": true,
-		"inputs": [
-			{
-				"internalType": "bytes32",
-				"name": "_nullifierHash",
-				"type": "bytes32"
-			}
-		],
-		"name": "isSpent",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [
-			{
-				"internalType": "bytes32[]",
-				"name": "_nullifierHashes",
-				"type": "bytes32[]"
-			}
-		],
-		"name": "isSpentArray",
-		"outputs": [
-			{
-				"internalType": "bool[]",
-				"name": "spent",
-				"type": "bool[]"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
 		"inputs": [],
 		"name": "lastRewardBlock",
 		"outputs": [
@@ -556,19 +594,13 @@
 	},
 	{
 		"constant": true,
-		"inputs": [
-			{
-				"internalType": "bytes32",
-				"name": "",
-				"type": "bytes32"
-			}
-		],
-		"name": "nullifierHashes",
+		"inputs": [],
+		"name": "numOfShares",
 		"outputs": [
 			{
-				"internalType": "bool",
+				"internalType": "uint256",
 				"name": "",
-				"type": "bool"
+				"type": "uint256"
 			}
 		],
 		"payable": false,
@@ -578,12 +610,33 @@
 	{
 		"constant": true,
 		"inputs": [],
-		"name": "numOfShares",
+		"name": "overMinEth",
 		"outputs": [
 			{
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "poolList",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
 			}
 		],
 		"payable": false,
@@ -646,14 +699,130 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "_rewardPerBlock",
+				"name": "_duration",
 				"type": "uint256"
 			}
 		],
-		"name": "setRewardPerBlock",
+		"name": "setDuration",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_fee",
+				"type": "uint256"
+			}
+		],
+		"name": "setFeePercent",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_overMinEth",
+				"type": "uint256"
+			}
+		],
+		"name": "setOverMinETH",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "burnFee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "fee1",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "fee2",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "fee3",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "fee4",
+				"type": "uint256"
+			}
+		],
+		"name": "setPoolFee",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "addr1",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "addr2",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "addr3",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "addr4",
+				"type": "address"
+			}
+		],
+		"name": "setPoolList",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "shareOfReward",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -693,6 +862,21 @@
 		"outputs": [
 			{
 				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "uniswapV2Router",
+		"outputs": [
+			{
+				"internalType": "contract IUniswapV2Router02",
 				"name": "",
 				"type": "address"
 			}
