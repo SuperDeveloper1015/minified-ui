@@ -217,7 +217,7 @@
   "notice.txt2": ". However, it is still an experimental software. Use at your own risk!",
   "notice.txt3": "Mining has started. Deposit to mint M87 and mine M87 by providing liquidity. Read ",
   "notice.txt4": "to learn more about token economy.",
-  "add.metamask": "Add to Metamask",
+  "add.metamask": "Add M87 to Metamask",
   "add.pancake": "Add to Pancake",
   "add.to": "Add to ${target}",
   "tvl": "TVL",

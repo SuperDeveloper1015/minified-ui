@@ -10,6 +10,11 @@
 				"internalType": "address",
 				"name": "_wrappedCoin",
 				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_messierAddr",
+				"type": "address"
 			}
 		],
 		"payable": false,
@@ -40,7 +45,7 @@
 			{
 				"indexed": false,
 				"internalType": "uint256",
-				"name": "cycDenomination",
+				"name": "M87Denomination",
 				"type": "uint256"
 			},
 			{
@@ -73,7 +78,7 @@
 			},
 			{
 				"internalType": "bool",
-				"name": "_buyCYC",
+				"name": "_buyM87",
 				"type": "bool"
 			}
 		],
@@ -81,6 +86,21 @@
 		"outputs": [],
 		"payable": true,
 		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "messierAddr",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -117,21 +137,6 @@
 		],
 		"payable": false,
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"internalType": "contract IMessierV2dot2",
-				"name": "_messier",
-				"type": "address"
-			}
-		],
-		"name": "whitelist",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{

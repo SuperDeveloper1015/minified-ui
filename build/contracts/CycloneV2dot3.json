@@ -1,57 +1,6 @@
 [
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "_govDAO",
-				"type": "address"
-			},
-			{
-				"internalType": "contract IERC20",
-				"name": "_token",
-				"type": "address"
-			},
-			{
-				"internalType": "contract IERC20",
-				"name": "_cycToken",
-				"type": "address"
-			},
-			{
-				"internalType": "address",
-				"name": "_treasury",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_initCYCDenomination",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_coinDenomination",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_tokenDenomination",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_startBlock",
-				"type": "uint256"
-			},
-			{
-				"internalType": "contract IVerifier",
-				"name": "_verifier",
-				"type": "address"
-			},
-			{
-				"internalType": "uint32",
-				"name": "_merkleTreeHeight",
-				"type": "uint32"
-			}
-		],
+		"inputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "constructor"
@@ -99,7 +48,7 @@
 			{
 				"indexed": false,
 				"internalType": "uint256",
-				"name": "cycDenomination",
+				"name": "M87Denomination",
 				"type": "uint256"
 			},
 			{
@@ -186,6 +135,36 @@
 	{
 		"constant": true,
 		"inputs": [],
+		"name": "M87Denomination",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "M87Token",
+		"outputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
 		"name": "ROOT_HISTORY_SIZE",
 		"outputs": [
 			{
@@ -216,7 +195,7 @@
 	{
 		"constant": true,
 		"inputs": [],
-		"name": "accumulateCYC",
+		"name": "accumulateM87",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -248,11 +227,26 @@
 		"inputs": [
 			{
 				"internalType": "address",
-				"name": "_newGovDAO",
+				"name": "_newOwner",
 				"type": "address"
 			}
 		],
-		"name": "changeGovDAO",
+		"name": "changeMessierOwner",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_newTreasury",
+				"type": "address"
+			}
+		],
+		"name": "changeTreasury",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -325,36 +319,6 @@
 		"type": "function"
 	},
 	{
-		"constant": true,
-		"inputs": [],
-		"name": "cycDenomination",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "cycToken",
-		"outputs": [
-			{
-				"internalType": "contract IERC20",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"constant": false,
 		"inputs": [
 			{
@@ -382,7 +346,7 @@
 			},
 			{
 				"internalType": "uint256",
-				"name": "cycDeno",
+				"name": "M87Deno",
 				"type": "uint256"
 			},
 			{
@@ -472,21 +436,6 @@
 	},
 	{
 		"constant": true,
-		"inputs": [],
-		"name": "govDAO",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
 		"inputs": [
 			{
 				"internalType": "bytes32",
@@ -514,7 +463,7 @@
 	{
 		"constant": true,
 		"inputs": [],
-		"name": "initCYCDenomination",
+		"name": "initM87Denomination",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -571,6 +520,21 @@
 				"internalType": "uint32",
 				"name": "",
 				"type": "uint32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "messier_owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
 			}
 		],
 		"payable": false,
@@ -889,6 +853,21 @@
 		"constant": false,
 		"inputs": [],
 		"name": "updateBlockReward",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_newToken",
+				"type": "address"
+			}
+		],
+		"name": "updateM87Token",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
