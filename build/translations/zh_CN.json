@@ -108,6 +108,7 @@
   "notice.early2.read": "阅读",
   "notice.early2.tips": "了解有关代币经济的更多信息",
   "recipient.tips": "警告：请勿使用交易所地址，你可能会丢失代币。",
+  "note.tips": "该票据充当合同的“所有权证明”，并直接与存入资金的价值相协调。 将票据提交给合约后，它会验证存款，然后验证相关资金的可用性，然后允许提取这些资金。",
   "Cyclone.Protocol.Analytics": "旋风协议分析",
   "analysis.num.title1": "IOTX存款总额",
   "analysis.num.title2": "USD存款总额",
