@@ -168,6 +168,7 @@
     "address.copied": "",
     "chain": "",
     "cyc.tips": "",
+    "cyc.reward": "",
     "click.buy": "",
     "relayer.fee": "плата за эстафету",
     "version": "",
@@ -243,7 +244,8 @@
     "copy.address": "",
     "view.on": "",
     "iotx.v2.tips": "",
-    "metamask": "",
+    "metamask": "metamask",
+    "walletconnect": "WalletConnect",
     "trustWallet": "",
     "mathWallet": "",
     "tokenPocket": ""
