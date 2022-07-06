@@ -158,7 +158,7 @@
   "pool.token": "${tokenA}/${tokenB} Pool Token",
   "amount.to.withdraw": "Amount to Withdraw",
   "preparing.zksnark": "Still Loading...",
-  "token.price": "Token price",
+  "token.price": "M87 Token price",
   "Bsc": "Binance Chain Wallet",
   "eth.connect": "Please choose your wallet to connect.",
   "wrong_netwokr_bsc": "Error: you are not using the correct network. Please change to Binace Smart Chain (Chain ID: 56).",

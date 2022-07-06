@@ -157,7 +157,7 @@
   "cyc.bsc.pool.token": "M87/BNB 流动性池",
   "amount.to.withdraw": "提款额",
   "preparing.zksnark": "仍在加载...",
-  "token.price": "通证价格",
+  "token.price": "M87通证价格",
   "Bsc": "币安链钱包",
   "eth.connect": "请选择连接钱包。",
   "wrong_netwokr_bsc": "错误：网络不正确！请使用币安智能链（链号：56）。",
