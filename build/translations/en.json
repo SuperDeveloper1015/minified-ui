@@ -67,7 +67,7 @@
   "WITHDRAW": "WITHDRAW",
   "Confirm": "Confirm",
   "Cancel": "Cancel",
-  "Docs": "Docs",
+  "Docs": "Documents",
   "Mining": "Mining",
   "Pool": "Pool",
   "Pool.tips": "Each pool is a standalone Messier smart contract with a separate anonymity set.",
