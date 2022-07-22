@@ -159,6 +159,7 @@
   "cyc.token.contract": "M87 token contract",
   "analysis.num.title5": "Liquidity Mining APY",
   "approve": "Approve M87",
+  "approve.token": "Approve ${token}",
   "Loading.text1.eth": "Please approve ${token} spend in wallet.",
   "Loading.text2.eth": "Please approve M87 spend in wallet.",
   "Loading.text2.step3.eth": "Please confirm the deposit transaction in your wallet.",
