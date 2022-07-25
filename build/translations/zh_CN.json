@@ -226,6 +226,7 @@
   "vote.now": "现在投票> > >",
   "Okay": "确定",
   "invalid.spent": "错误：笔记已被使用。",
+  "invalid.network": "错误：笔记在另一个网络上。",
   "confirm.wallet": "请确认这是您的钱包",
   "connect.wallet": "连接钱包",
   "notice.txt1": "Messier旋风协议的构建基于",
