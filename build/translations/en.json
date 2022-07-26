@@ -230,6 +230,7 @@
   "invalid.spent": "Error:The note is spent.",
   "invalid.network": "Error:The note is on another network.",
   "confirm.wallet": "Please confirm this is your wallet",
+  "toNet.wallet": "Please connect wallet to this",
   "connect.wallet": "Connect Wallet",
   "notice.txt1": "MESSIER Protocol is built on top of ",
   "notice.txt2": "However, it is still an experimental software. Use at your own risk!",
